@@ -183,7 +183,86 @@ cat ~/.ssh/id_rsa.pub
 ```
 将得到的链接复制进入github -> Settings -> SSH and GPG keys -> new SSH key，取个名字即可
 
-# 11 Backwardcpp
+# 11 Ceres
+安装相关依赖
+
+```bash
+# CMake
+sudo apt-get install cmake
+# google-glog + gflags
+sudo apt-get install libgoogle-glog-dev libgflags-dev
+# BLAS & LAPACK
+sudo apt-get install libatlas-base-dev
+# Eigen3
+sudo apt-get install libeigen3-dev
+# SuiteSparse and CXSparse (optional)
+sudo apt-get install libsuitesparse-dev
+```
+下载压缩包并解压，压缩包地址
+http://ceres-solver.org/ceres-solver-2.0.0.tar.gz
+
+```bash
+tar zxf ceres-solver-2.0.0.tar.gz #安装了zsh的extract插件，则可以直接用 x + filename解压
+cd ceres-solver-2.0.0
+mkdir build
+cd build
+cmake .. #生成makefile
+make -j4 #编译
+make test
+sudo make install #安装
+```
+测试，继续在build路径下输入
+
+```bash
+bin/simple_bundle_adjuster ../data/problem-16-22106-pre.txt 
+```
+若出现下图所示结果，则说明安装成功。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/9d49093ca5be41bf9b0a20c56038ff34.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0ZhbmdfY2hlbmdf,size_16,color_FFFFFF,t_70#pic_center)
+
+## CmakeLists.txt如何使用Ceres
+
+```cpp
+find_package(Ceres REQUIRED)
+include_directories(include    ${CERES_INCLUDE_DIRS})
+```
+# 12 截动图GIF工具byzanz
+
+```bash
+sudo apt-get install byzanz #下载byzanz
+```
+有一个小工具xdotool可以获取鼠标的所在坐标
+
+```bash
+sudo apt-get install xdotool
+```
+命令行输入
+
+```bash
+xdotool getmouselocation
+```
+可以得到鼠标当前的X，Y值，只需要知道所需举行区域左上和右下角的坐标即可截取GIF
+
+## 截图
+
+```bash
+byzanz-record -x 506 -y 132 -w 1019 -h 616  -d 10 --delay=5 -c  test.gif
+```
+这里设置延时5秒开始录制，录制时长为10秒，并输出到当前位置成test.gif文件，矩形左上角坐标为x=506, y=132，宽度为1019, 高度616.
+
+## 参数
+ byzanz主要的参数选项有：
+  -d, --duration=SECS     动画的时间 (默认：10 秒)
+  -e, --exec=COMMAND      Command to execute and time
+  --delay=SECS            开始之前的延时(默认：1 秒)
+  -c, --cursor            录制鼠标光标
+  -a, --audio             录音
+  -x, --x=像素            要录制矩形的 X 坐标
+  -y, --y=像素            要录制矩形的 Y 坐标
+  -w, --width=像素        录制矩形的宽度
+  -h, --height=像素       录制矩形的高度
+  -v, --verbose           详细
+  --display=显示          要使用的 X 显示
+# 13 Backwardcpp
 
 ```bash
  sudo apt-get install libdw-dev 
@@ -194,7 +273,7 @@ https://raw.githubusercontent.com/bombela/backward-cpp/master/backward.hpp
 复制到根目录
 sudo mv backward.hpp /usr/include
 
-# 12 OOQP
+# 14 OOQP
 
 https://github.com/RENyunfan/ooqp_group
 
