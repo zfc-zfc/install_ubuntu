@@ -14,9 +14,7 @@ sudo apt-get install cmake git zsh
 2）安装ohmyzsh
 
 ```bash
-wget -p ~/ https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh
-sudo chmod +x ~/install.sh
-sh ~/install.sh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 3）安装插件
