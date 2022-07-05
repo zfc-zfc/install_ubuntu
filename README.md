@@ -2,7 +2,7 @@
 
 # 安装Ubuntu
 
-# 1 zsh环境配置
+# zsh环境配置
 
 1）安装zsh
 
@@ -93,7 +93,7 @@ gedit ~/.config/terminator/config
 
 ```
 
-# 2 anaconda
+# anaconda
 
 anaconda直接官网下载就好了，安装完后在zshrc中添加
 
@@ -103,7 +103,7 @@ export PATH=~/anaconda3/bin:$PATH# >>> conda initialize >>># !! Contents within 
 
 
 
-# 3 eigen
+# eigen
 
 ```bash
 sudo apt-get install libeigen3-dev sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
@@ -111,8 +111,8 @@ sudo apt-get install libeigen3-dev sudo ln -s /usr/include/eigen3/Eigen /usr/inc
 
 
 
-# 4 ros-melodic
-
+# ROS
+## ros-melodic
 http://wiki.ros.org/melodic/Installation/Ubuntu
 
 ```bash
@@ -124,7 +124,7 @@ sudo apt update
 sudo apt install ros-melodic-desktop-full
 echo "source /opt/ros/melodic/setup.zsh" >> ~/.zshrcsource ~/.zshrc
 ```
-
+## ros-noetic
 ros-noetic
 ```
 # Setup your computer to accept software from packages.ros.org.
@@ -138,13 +138,13 @@ sudo apt install ros-noetic-desktop-full
 echo "source /opt/ros/noetic/setup.zsh" >> ~/.zshrc
 source ~/.zshrc
 ```
-# 5 mavros pcl
+# mavros pcl
 
 ```bash
 sudo apt-get install ros-melodic-mavros*sudo apt-get install ros-melodic-pcl*sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 ```
 
-# 6 clion
+# clion
 
 clion装好后要装三个插件比较舒服
 
@@ -152,17 +152,18 @@ clion装好后要装三个插件比较舒服
 * Hatchery
 * Rainbow Brackets
 
-# 7 simplescreenrecorder
+# simplescreenrecorder
 
 录屏软件
 
 ```bash
  sudo apt-get install simplescreenrecorder
 ```
+# 搜狗输入法
+https://shurufa.sogou.com/linux
 
 
-
-# 8 flameshot
+# flameshot
 
 截图软件
 
@@ -175,7 +176,7 @@ sudo apt-get install flameshot
 ![](README.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JpbGVHb3VsZQ==,size_16,color_FFFFFF,t_70.png)
 
 
-# 9 VLC
+# VLC
 
 视屏播放软件
 
@@ -183,7 +184,7 @@ sudo apt-get install flameshot
 sudo apt-get install vlc
 ```
 
-# 10 git ssh生成
+# git ssh生成
 
 ```bash
 ssh-keygen -t rsa -C “your-email”
@@ -195,7 +196,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 将得到的链接复制进入github -> Settings -> SSH and GPG keys -> new SSH key，取个名字即可
 
-# 11 Ceres
+# Ceres
 安装相关依赖
 
 ```bash
@@ -237,7 +238,7 @@ bin/simple_bundle_adjuster ../data/problem-16-22106-pre.txt
 find_package(Ceres REQUIRED)
 include_directories(include    ${CERES_INCLUDE_DIRS})
 ```
-# 12 截动图GIF工具byzanz
+# 截动图GIF工具byzanz
 
 ```bash
 sudo apt-get install byzanz #下载byzanz
@@ -274,7 +275,7 @@ byzanz-record -x 506 -y 132 -w 1019 -h 616  -d 10 --delay=5 -c  test.gif
   -h, --height=像素       录制矩形的高度
   -v, --verbose           详细
   --display=显示          要使用的 X 显示
-# 13 Backwardcpp
+# Backwardcpp
 
 ```bash
  sudo apt-get install libdw-dev 
@@ -284,8 +285,8 @@ byzanz-record -x 506 -y 132 -w 1019 -h 616  -d 10 --delay=5 -c  test.gif
 https://raw.githubusercontent.com/bombela/backward-cpp/master/backward.hpp
 复制到根目录
 sudo mv backward.hpp /usr/include
-
-# 14 OOQP
+在CmakeLists.txt target_link lib 后面加个 "dw"
+# OOQP
 
 https://github.com/RENyunfan/ooqp_group
 
