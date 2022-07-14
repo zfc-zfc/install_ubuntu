@@ -106,7 +106,8 @@ export PATH=~/anaconda3/bin:$PATH# >>> conda initialize >>># !! Contents within 
 # eigen
 
 ```bash
-sudo apt-get install libeigen3-dev sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
+sudo apt-get install libeigen3-dev 
+sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
 ```
 
 
