@@ -142,7 +142,9 @@ source ~/.zshrc
 # mavros pcl
 
 ```bash
-sudo apt-get install ros-melodic-mavros*sudo apt-get install ros-melodic-pcl*sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
+sudo apt-get install ros-noetic-mavros*
+sudo apt-get install ros-noetic-pcl*
+sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 ```
 
 # clion
