@@ -291,6 +291,7 @@ sudo mv backward.hpp /usr/include
 在CmakeLists.txt target_link lib 后面加个 "dw"
 
 # 添加python环境变量
+修改 ~/.zshrc
 ```bash
 export CPATH=/usr/include/python3.8:$CPATH
 export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
