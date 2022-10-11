@@ -289,6 +289,12 @@ https://raw.githubusercontent.com/bombela/backward-cpp/master/backward.hpp
 复制到根目录
 sudo mv backward.hpp /usr/include
 在CmakeLists.txt target_link lib 后面加个 "dw"
+
+# 添加python环境变量
+```bash
+export CPATH=/usr/include/python3.8:$CPATH
+export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
+```
 # OOQP
 
 https://github.com/RENyunfan/ooqp_group
