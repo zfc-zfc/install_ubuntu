@@ -349,8 +349,6 @@ reboot
 * 将ad_hoc.sh复制到主目录下
 
 ```bash
-sudo cp ad_hoc.sh ~/
-cd
 sudo chmod 777 ad_hoc.sh  #授予权限
 ```
 
