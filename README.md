@@ -153,7 +153,7 @@ sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y
 sudo apt install libqt5gui5 -y
 sudo apt install libfuse2 -y
 ```
-Download QGroundControl.AppImage.
+Download QGroundControl.AppImage. Copy it to App folder.
 Install (and run) using the terminal commands:
 ```bash
 chmod +x ./QGroundControl.AppImage
@@ -333,7 +333,7 @@ make
 sudo make install
 ```
 
-# wifi driver 88x2bu-5.8.7.4
+# wifi driver 88x2bu-5.8.7.4 (Skip this step)
 
 常规安装
 驱动解压的用户目录的下载目录，打开解压后的驱动文件夹，空白处点击鼠标右键打开终端
