@@ -375,7 +375,10 @@ sudo chmod 777 ad_hoc.sh  #授予权限
 ## NUC开机启动AdHoc：
 
 开机自启动
-crontab -e，在最后写入
+crontab -e，
+Select an editor, choose 1.
+crontab -l,
+在最后写入
 
 ```
 @reboot sleep 5; echo " " | sudo -S ~/ad_hoc.sh
