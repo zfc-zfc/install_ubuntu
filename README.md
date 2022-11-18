@@ -139,12 +139,13 @@ sudo apt install ros-noetic-desktop-full
 echo "source /opt/ros/noetic/setup.zsh" >> ~/.zshrc
 source ~/.zshrc
 ```
-# mavros pcl
+# mavros pcl plot-juggler
 
 ```bash
 sudo apt-get install ros-noetic-mavros*
 sudo apt-get install ros-noetic-pcl*
 sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
+sudo apt-get install ros-noetic-plotjuggler*
 ```
 
 # clion
