@@ -40,10 +40,6 @@ zsh-syntax-highlighting
 alias ezs="gedit ~/.zshrc"
 alias szs="source ~/.zshrc"
 alias sss="source devel/setup.zsh"
-# 填写你的软件路径
-alias clion=""
-# 填写你的软件路径
-alias pych="" 
 
 # source /opt/ros/melodic/setup.zsh
 # export PATH=~/anaconda3/bin:$PATH
