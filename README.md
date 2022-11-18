@@ -89,7 +89,7 @@ gedit ~/.config/terminator/config
 
 ```
 
-# anaconda
+# anaconda(For Learning)
 
 anaconda直接官网下载就好了，安装完后在zshrc中添加
 
