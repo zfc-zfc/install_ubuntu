@@ -358,9 +358,9 @@ sudo chmod 777 ad_hoc.sh  #授予权限
 
   `10.0.0.x`即为设定的IP，要确保每个电脑的这个值不同。
 
-  目前已有的三架飞机分别为 `10.0.0.11, 10.0.0.12, 10.0.0.13`，之后依次递增。
+  目前已有的三架飞机分别为 `10.0.0.101, 10.0.0.102, 10.0.0.103`，之后依次递增。
 
-  控制飞机的主机以及地面站可以设置为 `10.0.0.x`，x < 11且不相同即可，如`10.0.0.8`。
+  控制飞机的主机以及地面站可以设置为 `10.0.0.x`，x < 100且不相同即可，如`10.0.0.8`。
 
 * 启动AdHoc模式
 
@@ -369,6 +369,8 @@ sudo chmod 777 ad_hoc.sh  #授予权限
   ```
 
   然后用iwconfig查看网卡状态，如果如下所示有Cell值，且ESSID为设定的名称 djiadhoc，Mode为Ad-Hoc即为成功。
+  
+  Exit the AdHoc convert to WiFi mode use command "sudo service network-manager restart"
 
 ## NUC开机启动AdHoc：
 
