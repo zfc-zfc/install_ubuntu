@@ -315,6 +315,17 @@ export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 https://github.com/RENyunfan/ooqp_group
 
 # fmt, livox-sdk
+进入fmt库的文件夹，执行以下命令
+
+```bash
+mkdir build
+cd build/
+cmake -DBUILD_SHARED_LIBS=TRUE ..
+make
+sudo make install
+```
+
+livox-sdk
 ```bash
 mkdir build && cd build
 cmake ..
