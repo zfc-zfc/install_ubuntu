@@ -321,3 +321,14 @@ cmake ..
 make
 sudo make install
 ```
+
+# wifi driver 88x2bu-5.8.7.4
+
+常规安装
+驱动解压的用户目录的下载目录，打开解压后的驱动文件夹，空白处点击鼠标右键打开终端
+sudo gedit /etc/NetworkManager/NetworkManager.conf
+将 managed=false 改成 true
+然后在有makefile的目录里
+sudo make
+sudo make install
+reboot
