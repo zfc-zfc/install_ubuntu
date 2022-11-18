@@ -343,3 +343,43 @@ sudo gedit /etc/NetworkManager/NetworkManager.conf
 sudo make
 sudo make install
 reboot
+
+# 配置AdHoc点对点通信
+
+* 将ad_hoc.sh复制到主目录下
+
+```bash
+sudo cp ad_hoc.sh ~/
+cd
+sudo chmod 777 ad_hoc.sh  #授予权限
+```
+
+* sudo apt install net-tools
+
+* 将脚本中的wlo1修改为自己电脑中的网卡名，可以用`ifconfig`查看
+
+  `10.0.0.x`即为设定的IP，要确保每个电脑的这个值不同。
+
+  目前已有的三架飞机分别为 `10.0.0.11, 10.0.0.12, 10.0.0.13`，之后依次递增。
+
+  控制飞机的主机以及地面站可以设置为 `10.0.0.x`，x < 11且不相同即可，如`10.0.0.8`。
+
+* 启动AdHoc模式
+
+  ```
+  sh ad_hoc.sh
+  ```
+
+  然后用iwconfig查看网卡状态，如果如下所示有Cell值，且ESSID为设定的名称 djiadhoc，Mode为Ad-Hoc即为成功。
+
+## NUC开机启动AdHoc：
+
+开机自启动
+crontab -e，在最后写入
+
+```
+@reboot sleep 5; echo " " | sudo -S ~/ad_hoc.sh
+@reboot sleep 30; echo " " | sudo -S ~/ad_hoc.sh
+```
+
+ctrl + x保存退出
