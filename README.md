@@ -8,7 +8,7 @@
 
 ```bash
 sudo apt-get update
-sudo apt-get install cmake git zsh
+sudo apt-get install cmake git zsh curl
 ```
 
 2）安装ohmyzsh
