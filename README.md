@@ -314,3 +314,10 @@ export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 
 https://github.com/RENyunfan/ooqp_group
 
+# fmt, livox-sdk
+```bash
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+```
