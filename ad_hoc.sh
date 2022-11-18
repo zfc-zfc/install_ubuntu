@@ -1,13 +1,13 @@
 # unblocl
 rfkill unblock all
 # flush
-sudo ip addr flush dev wlp0s20f3
-sudo ifconfig wlp0s20f3 down
+sudo ip addr flush dev wlo1
+sudo ifconfig wlo1 down
 sudo service network-manager stop
-sudo iwconfig wlp0s20f3 mode ad-hoc
-sudo iwconfig wlp0s20f3 channel 1
-sudo iwconfig wlp0s20f3 essid 'djiadhoc'
-sudo ip addr add 10.0.0.7/24 broadcast 10.0.0.255 dev wlp0s20f3
-sudo ifconfig wlp0s20f3 up
+sudo iwconfig wlo1 mode ad-hoc
+sudo iwconfig wlo1 channel 1
+sudo iwconfig wlo1 essid 'djiadhoc'
+sudo ip addr add 10.0.0.109/24 broadcast 10.0.0.255 dev wlo1
+sudo ifconfig wlo1 up
 ifconfig
 iwconfig
