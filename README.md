@@ -139,6 +139,7 @@ source ~/.zshrc
 
 ```bash
 sudo apt-get install ros-noetic-mavros*
+sudo /opt/ros/noetic/lib/mavros/install_geographiclib_datasets.sh
 sudo apt-get install ros-noetic-pcl*
 sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 sudo apt-get install ros-noetic-plotjuggler*
