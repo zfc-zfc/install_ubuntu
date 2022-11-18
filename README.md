@@ -145,6 +145,21 @@ sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 sudo apt-get install ros-noetic-plotjuggler*
 ```
 
+# QGC
+```bash
+sudo usermod -a -G dialout $USER
+sudo apt-get remove modemmanager -y
+sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y
+sudo apt install libqt5gui5 -y
+sudo apt install libfuse2 -y
+```
+Download QGroundControl.AppImage.
+Install (and run) using the terminal commands:
+```bash
+chmod +x ./QGroundControl.AppImage
+./QGroundControl.AppImage  (or double click)
+```
+
 # clion
 
 clion装好后要装三个插件比较舒服
