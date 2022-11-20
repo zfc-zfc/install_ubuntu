@@ -40,8 +40,7 @@ zsh-syntax-highlighting
 alias ezs="gedit ~/.zshrc"
 alias szs="source ~/.zshrc"
 alias sss="source devel/setup.zsh"
-
-# source /opt/ros/melodic/setup.zsh
+source /opt/ros/noetic/setup.zsh
 # export PATH=~/anaconda3/bin:$PATH
 
 setopt no_nomatch # 允许使用 *缺省
