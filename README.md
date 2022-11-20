@@ -8,7 +8,7 @@
 
 ```bash
 sudo apt-get update
-sudo apt-get install cmake git zsh curl
+sudo apt-get install cmake git zsh curl net-tools
 ```
 
 2）安装ohmyzsh
@@ -350,8 +350,6 @@ reboot
 ```bash
 sudo chmod 777 ad_hoc.sh  #授予权限
 ```
-
-* sudo apt install net-tools
 
 * 将脚本中的wlo1修改为自己电脑中的网卡名，可以用`ifconfig`查看
 
