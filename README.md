@@ -351,6 +351,8 @@ cd build
 cmake ..
 make check (optional, runs unit tests)
 sudo make install
+sudo cp /usr/local/lib/libgtsam.so.4 /usr/lib
+sudo cp /usr/local/lib/libmetis-gtsam.so /usr/lib
 ```
 # wifi driver 88x2bu-5.8.7.4 (Skip this step)
 
