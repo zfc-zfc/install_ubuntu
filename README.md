@@ -335,7 +335,23 @@ cmake ..
 make
 sudo make install
 ```
+# GTSAM
 
+安装依赖
+
+```
+sudo apt-get install libboost-all-dev
+sudo apt-get install cmake
+sudo apt-get install libtbb-dev
+```
+进入GTSAM文件夹
+```
+mkdir build
+cd build
+cmake ..
+make check (optional, runs unit tests)
+make install
+```
 # wifi driver 88x2bu-5.8.7.4 (Skip this step)
 
 常规安装
