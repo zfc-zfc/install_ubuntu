@@ -8,6 +8,9 @@
 
 ```bash
 sudo apt-get update
+```
+Install some plugins
+```bash
 sudo apt-get install cmake git zsh curl net-tools
 ```
 
