@@ -350,7 +350,7 @@ mkdir build
 cd build
 cmake ..
 make check (optional, runs unit tests)
-make install
+sudo make install
 ```
 # wifi driver 88x2bu-5.8.7.4 (Skip this step)
 
