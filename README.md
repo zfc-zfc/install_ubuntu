@@ -9,7 +9,7 @@
 ```bash
 sudo apt-get update
 ```
-Install some plugins
+安装一些工具
 ```bash
 sudo apt-get install cmake git zsh curl net-tools
 ```
@@ -140,10 +140,11 @@ source ~/.zshrc
 # mavros pcl plot-juggler
 
 ```bash
-sudo apt-get install ros-noetic-mavros*
-sudo apt-get install ros-noetic-pcl*
+sudo apt install ros-noetic-mavros*
+sudo apt install ros-noetic-pcl*
 sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
-sudo apt-get install ros-noetic-plotjuggler*
+sudo apt install ros-noetic-plotjuggler*
+sudo apt install ros-noetic-view-controller-msgs
 ```
 
 # QGC
