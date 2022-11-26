@@ -160,7 +160,7 @@ Install (and run) using the terminal commands:
 ```bash
 sudo /opt/ros/noetic/lib/mavros/install_geographiclib_datasets.sh
 chmod +x ./QGroundControl.AppImage
-./QGroundControl.AppImage  (or double click)
+./QGroundControl.AppImage
 ```
 
 # clion
