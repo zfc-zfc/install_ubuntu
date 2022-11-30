@@ -419,3 +419,6 @@ sudo apt-get update
 # install typora
 sudo apt-get install typora
 ```
+
+# FlightPlot
+https://blog.csdn.net/qq_33641919/article/details/106883279?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165786853316781432947100%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165786853316781432947100&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-106883279-null-null.142^v32^pc_rank_34,185^v2^control&utm_term=flightplot%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95&spm=1018.2226.3001.4187
