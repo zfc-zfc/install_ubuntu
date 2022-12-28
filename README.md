@@ -233,6 +233,7 @@ sudo apt-get install libsuitesparse-dev
 ```
 下载压缩包并解压，压缩包地址
 http://ceres-solver.org/ceres-solver-2.0.0.tar.gz
+(Release里面也有）
 
 ```bash
 tar zxf ceres-solver-2.0.0.tar.gz #安装了zsh的extract插件，则可以直接用 x + filename解压
@@ -345,7 +346,7 @@ sudo apt-get install libboost-all-dev
 sudo apt-get install cmake
 sudo apt-get install libtbb-dev
 ```
-进入GTSAM文件夹
+下载GTSAM压缩包(见Release)并解压，进入GTSAM文件夹
 ```
 mkdir build
 cd build
