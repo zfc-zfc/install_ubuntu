@@ -328,6 +328,7 @@ cd build/
 cmake -DBUILD_SHARED_LIBS=TRUE ..
 make
 sudo make install
+sudo cp /usr/local/lib/libfmt.so.8 /usr/lib
 ```
 
 livox-sdk
