@@ -36,10 +36,8 @@ gedit ~/.zshrc
 在文件中添加
 
 ```bash
-plugins=(git
-zsh-autosuggestions
-zsh-syntax-highlighting
-)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting  git)
+source $ZSH/oh-my-zsh.sh
 alias ezs="gedit ~/.zshrc"
 alias szs="source ~/.zshrc"
 alias sss="source devel/setup.zsh"
