@@ -428,7 +428,7 @@ https://blog.csdn.net/qq_33641919/article/details/106883279?ops_request_misc=%25
 ```bash
 sudo add-apt-repository ppa:appimagelauncher-team/stable
 sudo apt install appimagelauncher
-···
+```
 
 # 使用zshrc自启动脚本
 https://blog.csdn.net/weijifen000/article/details/88370085
