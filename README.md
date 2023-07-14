@@ -143,7 +143,8 @@ sudo apt install ros-noetic-pcl*
 sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 sudo apt install ros-noetic-plotjuggler*
 sudo apt install ros-noetic-view-controller-msgs
-sudo apt install ros-noetic-octomap* 
+sudo apt install ros-noetic-octomap*
+sudo apt install ros-noetic-serial*
 ```
 
 # QGC
