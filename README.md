@@ -109,18 +109,6 @@ sudo ln -s /usr/include/eigen3/Eigen /usr/include/Eigen
 
 
 # ROS
-## ros-melodic
-http://wiki.ros.org/melodic/Installation/Ubuntu
-
-```bash
-sudo apt-get install curl
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt install curl # if you haven't already installed curl
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
-sudo apt update
-sudo apt install ros-melodic-desktop-full
-echo "source /opt/ros/melodic/setup.zsh" >> ~/.zshrcsource ~/.zshrc
-```
 ## ros-noetic
 ros-noetic
 ```
@@ -258,7 +246,7 @@ bin/simple_bundle_adjuster ../data/problem-16-22106-pre.txt
 find_package(Ceres REQUIRED)
 include_directories(include    ${CERES_INCLUDE_DIRS})
 ```
-# 截动图GIF工具byzanz
+# 截动图GIF工具byzanz (不需要)
 
 ```bash
 sudo apt-get install byzanz #下载byzanz
@@ -364,7 +352,7 @@ sudo make install
 sudo cp /usr/local/lib/libgtsam.so.4 /usr/lib
 sudo cp /usr/local/lib/libmetis-gtsam.so /usr/lib
 ```
-# wifi driver 88x2bu-5.8.7.4 (Skip this step)
+# wifi driver 88x2bu-5.8.7.4 (Skip this step) （不需要）
 
 常规安装
 驱动解压的用户目录的下载目录，打开解压后的驱动文件夹，空白处点击鼠标右键打开终端
@@ -375,7 +363,7 @@ sudo make
 sudo make install
 reboot
 
-# 配置AdHoc点对点通信
+# 配置AdHoc点对点通信 （不需要）
 
 * 将ad_hoc.sh复制到主目录下
 
@@ -401,7 +389,7 @@ sudo chmod 777 ad_hoc.sh  #授予权限
   
   Exit the AdHoc convert to WiFi mode use command "sudo service network-manager restart"
 
-## NUC开机启动AdHoc：
+## NUC开机启动AdHoc：（不需要）
 
 开机自启动
 crontab -e，
