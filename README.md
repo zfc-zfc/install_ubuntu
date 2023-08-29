@@ -433,3 +433,5 @@ https://blog.csdn.net/weijifen000/article/details/88370085
 sudo gedit ~/.zshrc
 sh xxx.sh
 ```
+# NUC13 Pro doesn't show WIFI
+install backport-iwlwifi-dkms_9858-0ubuntu3_all.deb in Release/Libs
