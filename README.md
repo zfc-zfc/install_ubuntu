@@ -435,3 +435,19 @@ sh xxx.sh
 ```
 # NUC13 Pro doesn't show WIFI
 install backport-iwlwifi-dkms_9858-0ubuntu3_all.deb in Release/Libs
+
+# 绑定USB端口号
+lsusb 查看设备ID
+创建配置文件
+```
+sudo gedit /etc/udev/rules.d/fcu.rules
+```
+写入，注意修改idVendor和IDProduct。
+```
+KERNEL=="ttyACM*", ATTRS{idVendor}=="3163", ATTRS{idProduct}=="004c", MODE:="0777", SYMLINK+="pixhawk"
+```
+随后更新
+```
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
