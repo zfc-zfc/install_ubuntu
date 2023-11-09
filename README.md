@@ -44,6 +44,10 @@ alias sss="source devel/setup.zsh"
 source /opt/ros/noetic/setup.zsh
 # export PATH=~/anaconda3/bin:$PATH
 
+export https_proxy=http://127.0.0.1:8889
+export http_proxy=http://127.0.0.1:8889
+export all_proxy=socks5://127.0.0.1:8889
+
 setopt no_nomatch # 允许使用 *缺省
 ```
 
