@@ -479,3 +479,18 @@ KERNEL=="ttyACM*", ATTRS{idVendor}=="3163", ATTRS{idProduct}=="004c", MODE:="077
 sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
+
+# git ssh 代理
+sudo gedit ~/.ssh/config 加入
+```
+ProxyCommand  /usr/bin/ncat --proxy 127.0.0.1:7892 --proxy-type http %h %p
+```
+
+# apt 使用代理
+sudo gedit /etc/apt/apt.conf.d/proxy.conf 加入
+```
+Acquire {
+  HTTP::proxy "http://127.0.0.1:7892";
+  HTTPS::proxy "http://127.0.0.1:7892";
+}
+```
